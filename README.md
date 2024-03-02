@@ -31,4 +31,25 @@ Onboard Shaman - manager
 ClaimStake Shaman - manager
 [op etherscan](https://optimistic.etherscan.io/address/0x22F09C11De8f059840FD8F60b11b8d60DeA0E011)
 
+## Contributing
 
+* Copy the example Environment variables file
+  ```
+  cp .env.example .env
+  ```
+* Create WalletConnect Cloud account https://docs.walletconnect.com/getting-started
+  * Create New Project called "publichaus" and copy the Wallet Connect ID shown in Settings
+  * Paste the value in the .env file (e.g. `VITE_WALLET_CONNECT_ID=...`
+* Update other environment variables (if necessary)
+* Install NVM and then install the Node.js version specified in the .nvmrc file
+```
+nvm install
+```
+* Install Yarn and dependencies then run the web server
+```
+npm install --global yarn
+yarn install
+yarn run dev
+```
+
+* View the PublicHAUS website locally at http://127.0.0.1:5173
